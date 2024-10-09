@@ -1,0 +1,14 @@
+
+State the problem clearly. Identify the input and output formats.
+
+Come up with some example inputs and outputs. Try to cover all edge cases.
+
+Come up wiht a correct solution for the problem.
+
+Implement the solution and test it using example inputs.
+
+Analyze the algorithm's complexity and Identify inefficiences.
+
+Apply the right technique to overcome the inefficiency.
+
+Repeat the steps 3 to 7.
