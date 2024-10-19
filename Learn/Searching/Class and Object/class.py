@@ -65,3 +65,14 @@ database.users
 print(database.find("atma3"))
 database.update(atma1)
 print(database.list_all())
+
+"""
+Time Complexity :
+
+Insertion : N
+Finding :   N
+Updation :  N
+List : 1
+
+Space Complexity : 1
+"""
