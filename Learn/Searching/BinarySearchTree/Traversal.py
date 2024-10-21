@@ -75,3 +75,22 @@ def preorder(node):
 
 
 preorder(tree2)
+
+
+# Height and Size :
+def height(node):
+    if node is None:
+        return 0
+    return 1 + max(height(node.left), height(node.right))
+
+
+height(tree2)
+
+
+def size(node):
+    if node is None:
+        return 0
+    return 1 + size(node.left) + size(node.right)
+
+
+size(tree2)
