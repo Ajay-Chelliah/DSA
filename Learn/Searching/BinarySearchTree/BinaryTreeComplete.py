@@ -33,6 +33,25 @@ class BinaryTree:
         else:
             print((space * (level + 1)) + "*")
 
+    def traverse_inorder(self):
+        if self is None:
+            return []
+        return (
+            BinaryTree.traverse_inorder(self.left)
+            + [self.key]
+            + BinaryTree.traverse_inorder(self.right)
+        )
+
+    def nodes(self):
+        if self is None:
+            return 0
+        return 1 + BinaryTree.nodes(self.right) + BinaryTree.nodes(self.left)
+
+    def height(self):
+        if self is None:
+            return 0
+        return 1 + max(BinaryTree.height(self.right), BinaryTree.height(self.left))
+
 
 tree_tuple = ((1, 3, None), 2, ((None, 3, 4), 5, (6, 7, 8)))
 tree = BinaryTree.tuple_tree(tree_tuple)
@@ -40,3 +59,5 @@ tree
 tree.left.key
 tree.display_tree()
 tree.traverse_inorder()
+tree.nodes()
+tree.height()
