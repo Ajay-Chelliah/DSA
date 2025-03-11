@@ -1,4 +1,3 @@
-
 State the problem clearly. Identify the input and output formats.
 
 Come up with some example inputs and outputs. Try to cover all edge cases.
